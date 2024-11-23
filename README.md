@@ -15,11 +15,9 @@ To construct a 4-bit adder, need to chain together four 1-bit full adders. Each 
 
 To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
-![Screenshot 2024-11-22 223133](https://github.com/user-attachments/assets/27c1f008-1959-42b6-b2ca-81add1f51bd5)
 
 Here’s the truth table for a 1-bit full adder:
 
-![Screenshot (43)](https://github.com/user-attachments/assets/5f01b9de-aeb9-4ee5-ae4e-e89afaf91b76)
 
 ### Fig 1 : Diagram and truth table of full adder
 
@@ -71,6 +69,7 @@ Developed by: Register Number*/
       (The path of cshrc could vary depending on the installation destination)
       
 	After this you can see the window like below 
+![Screenshot (44)](https://github.com/user-attachments/assets/bfdff968-96f5-4755-99db-7827eeeff104)
 
 ### Fig 3:Invoke the Cadence Environment
 
@@ -83,12 +82,14 @@ or
 •	linux:/> nclaunch& // On subsequent calls to NCVERILOG 
 
 	It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
+![image](https://github.com/user-attachments/assets/d57e69db-3589-448d-8f7a-cd86bf26dc63)
 
 ### Fig 4:Setting Multi-step simulation
 
 	Select Multiple Step and then select “Create cds.lib File” .
 
 	Click the cds.lib file and save the file by clicking on Save option 
+![Screenshot 2024-11-22 223247](https://github.com/user-attachments/assets/b9e50aa1-fd38-4856-8de0-b15a2322921b)
 
 ### Fig 5:cds.lib file Creation
 
@@ -100,7 +101,7 @@ or
 
 •	A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
 
-![Screenshot 2024-11-22 222407](https://github.com/user-attachments/assets/e824da95-98f3-4283-a9b2-18958f2037e4)
+![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
 
 ### Fig 6: Selection of Don’t include any libraries
 
@@ -153,6 +154,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 5.	It also establishes net connectivity and prepares all of this for simulation
    
 	After elaboration the file will come under snapshot. Select the test bench and elaborate it.
+![Screenshot 2024-11-22 222129](https://github.com/user-attachments/assets/e6a1376a-e119-4db0-b7f7-9e7e0e304b5e)
 
 ### Fig 9: Elaboration Launch Option
 
@@ -165,10 +167,13 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	Simulation allow to dump design and test bench signals into a waveform 
 
 	Steps for simulation – Run the simulation command with simulator options
+![image](https://github.com/user-attachments/assets/195ded36-8692-403a-882c-747c8c32f9f1)
 
 ### Fig 10: Design Browser window for simulation
+![image](https://github.com/user-attachments/assets/a5136692-b8a0-44ea-a688-e4b74701824e)
 
 ### Fig 11: Launching Simulation Waveform WindowSimulation Waveform Window
+![Screenshot 2024-11-22 222407](https://github.com/user-attachments/assets/99727ad5-bd4a-44f0-80cc-38e22f963925)
 
 ### Fig 12: Simulation Waveform Window
 
